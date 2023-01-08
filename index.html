@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="input.css" />
+  </head>
+  <body>
+    <div class="border-2 border-red-400 w-[600px] mx-auto mt-10 p-4">
+      <form>
+        <p class="heading text-center text-red-600 font-semibold text-4xl">Loan Calculator</p>
+        <div class="mt-10 ml-12">
+          <div class="input-container">
+            <label for="amount" class="font-bold">Loan Amount(र)</label>
+            <input type="number" id="loanAmount" class="border-2 border-slate-400 rounded focus:outline-none text-xl  my-2 ml-5" required />
+          </div>
+          <div class="input-container">
+            <label for="interest" class="font-bold">Interest Rate(%)</label>
+            <input type="text" id="interestRate" class="border-2 border-slate-400 rounded focus:outline-none text-xl my-2 ml-6" required />
+          </div>
+          <div class="input-container loanTenureContainer flex">
+            <label for="loanTenure" class="mt-4 font-bold">Loan Tenure</label>
+            <input type="text" id="loanTenure" class=" border-2 border-slate-400 rounded-l-md focus:outline-none text-xl ml-14 w-20 h-10 mt-2" required />
+            <div class="radio-container my-2 border-2 border-slate-400 h-10 px-2 text-center rounded-r-md">
+              <label for="month" class="cursor-pointe">Month</label>
+              <input type="radio" name="btn" id="month" />
+              <label for="year" class="cursor-pointer">Year</label>
+              <input type="radio" name="btn" id="year"/>
+            </div>
+          </div>
+          <div class="submit-container text-center my-5">
+            <button class="text-lg text-white bg-red-600 px-5 py-1 rounded-md" id="btn" type="submit">Submit</button>
+          </div>
+
+          <div class="output">
+            <p class="border-2 border-slate-400 rounded my-3 py-1 px-3 font-semibold">Loan EMI <span class="float-right text-red-900 font-extrabold" id="emi">र</span></p>
+            <p class="border-2 border-slate-400 rounded my-3 py-1 px-3 font-semibold">Total Interest Payable <span class="float-right text-red-900 font-extrabold" id="interest">र</span></p>
+            <p class="border-2 border-slate-400 rounded my-3 py-1 px-3 font-semibold">Total Payment (Principal + Interest) <span class="float-right text-red-900 font-extrabold" id="payment">र</span></p>
+          </div>
+        </div>
+        </form>
+      </div>
+      <script src="index.js"></script>
+  </body>
+</html>
