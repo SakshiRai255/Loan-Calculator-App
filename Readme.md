@@ -1,4 +1,4 @@
-## This is simple Loan Calculator App
+## This is simple Loan Calculator App Project it calulates emi
 
 ### Stack Used:-
 - HTML
